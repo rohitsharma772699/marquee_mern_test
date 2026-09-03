@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Student Management System</h1>
+        <form id="studentForm">
+            <label for="studentName">Student Name</label>
+            <input type="text" id="studentName" name="studentName" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mobile">Phone Number</label>
+            <input type="tel" id="mobile" name="mobile">
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob">
+            <fieldset>
+                <legend>Gender</legend>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </fieldset>
+            <fieldset>
+                <legend>Skills</legend>
+                <label><input type="checkbox" name="skills" value="nodejs"> Node.js</label>
+                <label><input type="checkbox" name="skills" value="html"> HTML</label>
+                <label><input type="checkbox" name="skills" value="javascript"> JavaScript</label>
+                <label><input type="checkbox" name="skills" value="git"> Git</label>
+                <label><input type="checkbox" name="skills" value="react"> React</label>
+            </fieldset>
+            <label for="comments">Comments</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+            <label for="profilePhoto">Profile Photo</label>
+            <input type="file" id="profilePhoto" name="profilePhoto" accept="image/*">
+            <button type="submit">Add Student</button>
+            <button type="reset">Reset</button>
+        </form>
+        <section id="studentList" aria-live="polite"></section>
+    </main>
+</body>
+</html>
+    
+
+
